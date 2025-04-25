@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--
+    
+    primary-color: 222831;
+    secondry color: 393E46;
+    third-color: 00ADB5;
+    fourth-color: EEEEEE;
+    
+    
+    
+    -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>d7meDev</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+  <style>
+    :root {
+      --primary-color: #222831;
+      --secondry-color: #393e46;
+      --third-color: #00adb5;
+      --fourth-color: #eeeeee;
+    }
+
+    *{
+      margin: 0 ;
+      padding: 0 ;
+      text-decoration: none !important;
+      list-style: none;
+      scroll-behavior: smooth;
+    }
+
+    body{
+
+      background-color: var(--primary-color);
+    }
+
+    .navbar-section{
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+    }
+
+    .navbar-section a{
+      color: var(--fourth-color);
+    }
+
+    .links{
+      display: flex;
+      column-gap: 15px;
+    }
+
+    .menu-button{
+      display: none;
+      background:none;
+      border: none;
+
+    }
+
+    .menu-button img{
+
+      height: 40px;
+      color: var(--fourth-color);
+      
+    }
+
+    .navbar-links-small-devices{
+      
+      display: none ;
+    }
+
+
+    label{
+      color: var(--fourth-color);
+      
+    }
+
+    input,textarea{
+      background-color: var(--secondry-color) !important;
+      color: var(--fourth-color) !important;
+      outline: none !important;
+      border: none !important;
+      transition: none;
+    }
+
+    input:focus, textarea:focus, select:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    }
+
+    input::placeholder,textarea::placeholder{
+              
+      color: var(--fourth-color) !important;
+    }
+
+
+    
+
+    
+
+
+
+    @media (max-width:768px) {
+      
+      .links{
+        display: none;
+      }
+
+      .menu-button{
+        display: block;
+      }
+
+
+      .navbar-links-small-devices{
+
+        
+        background-color: rgb(44, 50, 59);
+
+      }
+
+
+      .navbar-links-small-devices .links-small{
+
+        text-align: center;
+        padding: 0px !important;
+        
+
+      }
+
+      .navbar-links-small-devices .links-small li{
+
+        padding: 10px !important;
+      }
+
+      .navbar-links-small-devices .links-small li a{
+
+        color: var(--fourth-color);
+      }
+      
+    }
+
+    @media (min-width:769px) {
+
+      .navbar-links-small-devices{
+
+        
+        display: none !important;
+        
+
+      }
+      
+    }
+
+      
+    
+
+    
+  </style>
+</head>
+
+<body>
+
+
+  <section class="navbar-section px-3 px-lg-5 py-4">
+      <h1 class="logo fs-4 fw-bold"><a href="#">d7meDev</a></h1>
+      <ul class="links fs-5 fw-light hide">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <button class="menu-button"><img src="./images/menu.svg" alt=""></button>
+  </section>
+
+  <section class="navbar-links-small-devices">
+
+    <ul class="links-small">
+      <li class="fs-5 fw-light"><a href="#">Home</a></li>
+      <li class="fs-5 fw-light"><a href="#">About Me</a></li>
+      <li class="fs-5 fw-light"><a href="#">Contact</a></li>
+    </ul>
+
+  </section>
+
+
+  <section class="hero-section mb-5" style="display: flex; justify-content: center;">
+
+    <div class="container px-5 py-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6" style="position: relative;">
+          <img src="./images/Hero-image.svg" class="d-block mx-lg-auto img-fluid" alt="Hero-image" width="600" loading="lazy">
+          <img src="./images/SPRINKLES.svg" class="d-block mx-lg-auto img-fluid" style="position: absolute;top: -100px;left: 0px; z-index: -1;" alt="Hero-image" width="600" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 style="color: var(--fourth-color) !important;" class="display-5 fw-bold text-body-emphasis lh-1 mb-3">CREATIVE WEB <span style="color: var(--third-color);">DEVELOPER</span></h1>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button style="background-color: var(--third-color); border: none;" type="button" class="btn btn-primary btn-lg px-4 me-md-2 py-1">Hire Me</button>
+            <button style="background-color: var(--secondry-color); border: none; color: var(--fourth-color);" type="button" class="btn btn-outline-secondary btn-lg px-4 py-1">Download CV <img src="./images/download.svg" alt="download svg"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="about-section mb-5">
+
+    <div class="px-4 pt-5 my-5 text-center border-bottom" style="border-bottom: var(--fourth-color);">
+      <h2 style="color: var(--fourth-color) !important;" class="display-4 fw-bold text-body-emphasis">About <span style="color: var(--third-color);">Me</span></h2>
+      <div class="col-lg-6 mx-auto">
+        <p class=" text-white mb-5">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        
+      </div>
+      <div class="overflow-hidden" style="max-height: 30vh;">
+        <div class="container px-5">
+          <img src="./images/about-me.svg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="about image"  height="500" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="projects-section  mb-5" style="background-image: url(./images/doodle-items.svg); background-position: center; background-size: cover;">
+   
+    
+    <div class="container">
+
+      <h2 style="color: var(--fourth-color) !important;" class="display-4 fw-bold text-body-emphasis mb-5 text-center text-xl-start"> <span style="color: var(--third-color);">My</span> Projects</h2>
+      <div class="projects p-3 d-flex flex-xl-row justify-content-between align-items-center flex-column row-gap-5">
+  
+        <div class="project p-2 " style="width: max-content; border-radius: 20px; background-color: var(--secondry-color);">
+            <img class="mb-2" style="border-radius: 20px; opacity: 90%;" src="./images/project-1.png" alt="TinDog project" width="300px" height="200px">
+            <h3 style="color: var(--fourth-color); text-align: center;"><span style="color: var(--third-color);">T</span>inDog</h3>
+        </div>
+                      
+        <div class="project p-2 " style="width: max-content; border-radius: 20px; background-color: var(--secondry-color);">
+            <img class="mb-2" style="border-radius: 20px; opacity: 90%;" src="./images/project-2.png" alt="TinDog project" width="300px" height="200px" >
+            <h3 style="color: var(--fourth-color); text-align: center;"><span style="color: var(--third-color);">M</span>ove It</h3>
+        </div>
+                      
+        <div class="project p-2 " style="width: max-content; border-radius: 20px; background-color: var(--secondry-color);" >
+            <img class="mb-2" style="border-radius: 20px; opacity: 80%;" src="./images/project-3.png" alt="TinDog project" width="300px" height="200px">
+            <h3 style="color: var(--fourth-color); text-align: center;"><span style="color: var(--third-color);">F</span>oods</h3>
+        </div>
+                      
+      
+      </div>
+
+    </div>
+    
+
+    
+    
+  </section>
+
+  <section class="contact-section  mb-5">
+
+    <div class="container pt-5">
+
+     <div class="d-flex flex-lg-row justify-content-between align-items-center flex-column gap-1  ">
+
+        <div class="contact-header text-center">
+
+        <h2  class="fs-1 text-lg-start" style="color: var(--fourth-color);">Got A Project In <span style="color: var(--third-color);">Mind?</span></h2>
+        <img height="300px" src="./images/contact-img.svg" alt="">
+
+        </div>
+
+        <div class="contact-body">
+
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="input-text" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="input-text" placeholder="d7meDev">
+            </div>
+            <div class="col-md-6">
+              <label for="input-email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="input-email" placeholder="d7meDev@example.com" >
+            </div>
+
+            <div class="col-12">
+              <label for="">Message</label>
+              <br>
+              <textarea class="p-1" placeholder="I got a great idea!!!" style="width: 100%;" name="" id=""></textarea>
+            </div>
+            
+            <div class="col-12">
+              <button style="background-color: var(--third-color); border: none;" type="button" class="btn btn-primary btn-lg px-4 me-md-2 py-1">Send it</button>
+            </div>
+          </form>
+
+        </div>
+
+
+     </div>
+
+    </div>
+  </section>
+
+
+  <section class="footer-section">
+
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li  class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary" style="color: var(--fourth-color) !important;">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary" style="color: var(--fourth-color) !important;" >About Me</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary" style="color: var(--fourth-color) !important;">Contact</a></li>
+        </ul>
+        <p style="color: var(--fourth-color) !important;" class="text-center text-body-secondary">© 2025 Company, Inc</p>
+      </footer>
+    </div>
+
+  </section>
+
+
+
+  
+ 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+
+  <script>
+
+
+      const btn      = document.querySelector('.menu-button');
+      const navSmall = document.querySelector('.navbar-links-small-devices');
+
+      btn.addEventListener('click', () => {
+        navSmall.style.display = navSmall.style.display == "block" ? "none" : "block";
+      });
+
+
+  </script>
+</body>
+
+</html>
